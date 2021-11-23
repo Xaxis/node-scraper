@@ -18,10 +18,16 @@ A web based scraper and decentralized search engine.
 node --version
 ```
 
-2) Install all dependencies
+Install all dependencies
 
 ``` bash
 npm run init
+```
+
+Build the database
+
+``` bash
+npm run build
 ```
 
 ## Usage

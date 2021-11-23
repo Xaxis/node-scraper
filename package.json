@@ -4,9 +4,13 @@
   "description": "A web based scraper and decentralized search engine.",
   "main": "index.js",
   "scripts": {
+    "build": "npm run clean; touch src/backend/db/db.db && npm run rebuild:db",
+    "clean": "npm run clean:default",
+    "clean:default": "rm -rf dist 2>/dev/null; rm -rf build 2>/dev/null; ",
     "init": "npm install",
     "dev": "npm run backend:node-server && parcel serve src/index.html",
-    "backend:node-server": "node src/backend/server.js &"
+    "backend:node-server": "node src/backend/server.js &",
+    "rebuild:db": "node src/backend/scripts/rebuild_db.js"
   },
   "repository": {
     "type": "git",
@@ -31,10 +35,12 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "lodash": "^4.17.21",
+    "node-uuid": "^1.4.8",
     "parcel-bundler": "^1.12.5",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-redux": "^7.2.2",
+    "sqlite3": "^5.0.2",
     "websocket": "^1.0.34"
   },
   "devDependencies": {

@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Layout from './components/Layout/Layout'
-import {createMuiTheme, MuiThemeProvider} from '@material-ui/core'
+import {createTheme, MuiThemeProvider} from '@material-ui/core'
 import './index.scss'
 
 const App = function () {
@@ -77,7 +77,7 @@ const App = function () {
     /**
      * Root MUI component overrides.
      */
-    const theme = createMuiTheme({
+    const theme = createTheme({
         typography: {
             fontSize: 12
         },
