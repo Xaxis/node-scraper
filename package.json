@@ -1,0 +1,44 @@
+{
+  "name": "node-scraper",
+  "version": "0.0.0",
+  "description": "A web based scraper and decentralized search engine.",
+  "main": "index.js",
+  "scripts": {
+    "init": "npm install",
+    "dev": "npm run backend:node-server && parcel serve src/index.html",
+    "backend:node-server": "node src/backend/server.js &"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xaxis/node-scraper.git"
+  },
+  "keywords": [
+    "scraper",
+    "search",
+    "decentralized"
+  ],
+  "author": "Wil Neeley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xaxis/node-scraper/issues"
+  },
+  "homepage": "https://github.com/Xaxis/node-scraper#readme",
+  "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.57",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21",
+    "parcel-bundler": "^1.12.5",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-redux": "^7.2.2",
+    "websocket": "^1.0.34"
+  },
+  "devDependencies": {
+    "sass": "^1.43.4",
+    "typescript": "^4.5.2"
+  }
+}
